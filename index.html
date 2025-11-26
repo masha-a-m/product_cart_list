@@ -375,11 +375,17 @@
       .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       }
-      
-      .cart-sidebar {
-        max-width: 100%;
-      }
-    }
+
+  .cart-sidebar {
+    max-width: 100%;
+    width: 100%;
+    right: -100%; /* Match the width change */
+  }
+  
+  .cart-sidebar.active {
+    right: 0;
+  }
+}
     
     @media (max-width: 480px) {
       .products-grid {
@@ -405,7 +411,7 @@
       <div class="products-grid" id="products-grid">
         <!-- Products will be dynamically inserted here -->
         <div class="product-card">
-          <img src="./assets/images/image-waffle.jpg" alt="Waffle with Berries" class="product-image">
+          <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries" class="product-image">
           <p class="product-category">Waffle</p>
           <h2 class="product-name">Waffle with Berries</h2>
           <p class="product-price">$6.50</p>
@@ -413,7 +419,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-creme-brulee.jpg" alt="Vanilla Bean Crème Brûlée" class="product-image">
+          <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée" class="product-image">
           <p class="product-category">Crème Brûlée</p>
           <h2 class="product-name">Vanilla Bean Crème Brûlée</h2>
           <p class="product-price">$7.00</p>
@@ -421,7 +427,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-macaron.jpg" alt="Macaron Mix of Five" class="product-image">
+          <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron Mix of Five" class="product-image">
           <p class="product-category">Macaron</p>
           <h2 class="product-name">Macaron Mix of Five</h2>
           <p class="product-price">$8.00</p>
@@ -429,7 +435,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-tiramisu.jpg" alt="Classic Tiramisu" class="product-image">
+          <img src="./assets/images/image-tiramisu-desktop.jpg" alt="Classic Tiramisu" class="product-image">
           <p class="product-category">Tiramisu</p>
           <h2 class="product-name">Classic Tiramisu</h2>
           <p class="product-price">$5.50</p>
@@ -437,7 +443,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-baklava.jpg" alt="Pistachio Baklava" class="product-image">
+          <img src="./assets/images/image-baklava-desktop.jpg" alt="Pistachio Baklava" class="product-image">
           <p class="product-category">Baklava</p>
           <h2 class="product-name">Pistachio Baklava</h2>
           <p class="product-price">$4.00</p>
@@ -445,7 +451,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-pie.jpg" alt="Lemon Meringue Pie" class="product-image">
+          <img src="./assets/images/image-cake-desktop.jpg" alt="Lemon Meringue Pie" class="product-image">
           <p class="product-category">Pie</p>
           <h2 class="product-name">Lemon Meringue Pie</h2>
           <p class="product-price">$5.00</p>
@@ -453,7 +459,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-cake.jpg" alt="Red Velvet Cake" class="product-image">
+          <img src="./assets/images/image-cake-desktop.jpg" alt="Red Velvet Cake" class="product-image">
           <p class="product-category">Cake</p>
           <h2 class="product-name">Red Velvet Cake</h2>
           <p class="product-price">$4.50</p>
@@ -461,7 +467,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-brownie.jpg" alt="Salted Caramel Brownie" class="product-image">
+          <img src="./assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie" class="product-image">
           <p class="product-category">Brownie</p>
           <h2 class="product-name">Salted Caramel Brownie</h2>
           <p class="product-price">$4.50</p>
@@ -469,7 +475,7 @@
         </div>
         
         <div class="product-card">
-          <img src="./assets/images/image-panna-cotta.jpg" alt="Vanilla Panna Cotta" class="product-image">
+          <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta" class="product-image">
           <p class="product-category">Panna Cotta</p>
           <h2 class="product-name">Vanilla Panna Cotta</h2>
           <p class="product-price">$6.50</p>
